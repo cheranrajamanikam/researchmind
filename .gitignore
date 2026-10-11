@@ -1,0 +1,39 @@
+# secrets and local data (database, uploaded PDFs, generated secret key, eval reports)
+.env
+data/
+*.db
+
+# python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# node
+node_modules/
+frontend/dist/
+*.local
+.vite/
+
+# editors / OS
+.DS_Store
+.idea/
+.vscode/
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.db
+*.sqlite
+*.sqlite3
+uploads/
+storage/
+node_modules/
+dist/
+frontend/dist/
+.idea/
+.vscode/

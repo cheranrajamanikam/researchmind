@@ -1,0 +1,141 @@
+{
+  "description": "Gold questions for the four synthetic sample papers (fictional content).",
+  "questions": [
+    {
+      "question": "What exact match does Adaptive Retrieval obtain on Natural Questions?",
+      "answerable": true,
+      "paper_title_contains": "Adaptive Retrieval Depth",
+      "expected_snippet": "44.5 exact match",
+      "expected_page": 3
+    },
+    {
+      "question": "How many random seeds were the adaptive retrieval results averaged over?",
+      "answerable": true,
+      "paper_title_contains": "Adaptive Retrieval Depth",
+      "expected_snippet": "averaged over 3 random seeds",
+      "expected_page": 2
+    },
+    {
+      "question": "Which GPUs were used to train the adaptive retrieval method?",
+      "answerable": true,
+      "paper_title_contains": "Adaptive Retrieval Depth",
+      "expected_snippet": "4 NVIDIA A100 GPUs",
+      "expected_page": 2
+    },
+    {
+      "question": "What learning rate and batch size did adaptive retrieval use?",
+      "answerable": true,
+      "paper_title_contains": "Adaptive Retrieval Depth",
+      "expected_snippet": "learning rate was 2e-5",
+      "expected_page": 2
+    },
+    {
+      "question": "What limitation does the adaptive retrieval depth paper mention about languages?",
+      "answerable": true,
+      "paper_title_contains": "Adaptive Retrieval Depth",
+      "expected_snippet": "only evaluate English-language questions",
+      "expected_page": 3
+    },
+    {
+      "question": "What is the default retrieval depth of Adaptive Retrieval?",
+      "answerable": true,
+      "paper_title_contains": "Adaptive Retrieval Depth",
+      "expected_snippet": "default retrieval depth is top-5 passages",
+      "expected_page": 2
+    },
+    {
+      "question": "What exact match did the replication study obtain for Adaptive Retrieval?",
+      "answerable": true,
+      "paper_title_contains": "Replicating Adaptive Retrieval",
+      "expected_snippet": "41.2 exact match",
+      "expected_page": 1
+    },
+    {
+      "question": "Which retriever and generator did the replication study use?",
+      "answerable": true,
+      "paper_title_contains": "Replicating Adaptive Retrieval",
+      "expected_snippet": "DPR-Multi retriever and a T5-large generator",
+      "expected_page": 2
+    },
+    {
+      "question": "How many GPUs and which type were used in the reproducibility study?",
+      "answerable": true,
+      "paper_title_contains": "Replicating Adaptive Retrieval",
+      "expected_snippet": "8 NVIDIA V100 GPUs",
+      "expected_page": 2
+    },
+    {
+      "question": "Why might the replication normalize answers differently from the original?",
+      "answerable": true,
+      "paper_title_contains": "Replicating Adaptive Retrieval",
+      "expected_snippet": "could not access the original evaluation script",
+      "expected_page": 3
+    },
+    {
+      "question": "Where in the input is performance highest for relevant information?",
+      "answerable": true,
+      "paper_title_contains": "Position Sensitivity",
+      "expected_snippet": "beginning or end of the input",
+      "expected_page": 1
+    },
+    {
+      "question": "What F1 does position-aware reranking obtain on HotpotQA?",
+      "answerable": true,
+      "paper_title_contains": "Position Sensitivity",
+      "expected_snippet": "63.8 F1",
+      "expected_page": 3
+    },
+    {
+      "question": "How many retrieved passages were used in the position sensitivity experiments?",
+      "answerable": true,
+      "paper_title_contains": "Position Sensitivity",
+      "expected_snippet": "top-20 retrieved passages",
+      "expected_page": 2
+    },
+    {
+      "question": "What happens to citation precision when distractor passages are retrieved?",
+      "answerable": true,
+      "paper_title_contains": "Faithfulness Metrics",
+      "expected_snippet": "Citation precision declines",
+      "expected_page": 2
+    },
+    {
+      "question": "What citation precision does faithfulness-aware decoding obtain on PopQA?",
+      "answerable": true,
+      "paper_title_contains": "Faithfulness Metrics",
+      "expected_snippet": "71.4 citation precision",
+      "expected_page": 2
+    },
+    {
+      "question": "Did the faithfulness metrics paper evaluate multilingual data?",
+      "answerable": true,
+      "paper_title_contains": "Faithfulness Metrics",
+      "expected_snippet": "did not evaluate multilingual data",
+      "expected_page": 3
+    },
+    {
+      "question": "Does adaptive retrieval eliminate hallucinations in clinical decision support?",
+      "answerable": false
+    },
+    {
+      "question": "What is the capital city of Australia?",
+      "answerable": false
+    },
+    {
+      "question": "How many parameters does GPT-4 have?",
+      "answerable": false
+    },
+    {
+      "question": "What is the boiling point of tungsten in kelvin?",
+      "answerable": false
+    },
+    {
+      "question": "Which protein folding method won the CASP14 competition?",
+      "answerable": false
+    },
+    {
+      "question": "What does the library say about reinforcement learning for robotic manipulation?",
+      "answerable": false
+    }
+  ]
+}

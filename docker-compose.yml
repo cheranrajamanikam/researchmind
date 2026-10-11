@@ -1,0 +1,23 @@
+# docker compose up --build        then open http://localhost:8000
+#
+# Ollama keeps running on your machine (so it can use your GPU). The container reaches it through
+# host.docker.internal. On Linux, make sure Ollama listens on all interfaces for that to work:
+#   OLLAMA_HOST=0.0.0.0 ollama serve
+services:
+  researchmind:
+    build: .
+    image: researchmind:latest
+    ports:
+      - "127.0.0.1:8000:8000"   # only this computer can reach it, not your network
+    environment:
+      RM_OLLAMA_URL: http://host.docker.internal:11434
+      RM_ANSWER_MODEL: ${RM_ANSWER_MODEL:-qwen2.5:7b}
+      RM_EMBED_MODEL: ${RM_EMBED_MODEL:-nomic-embed-text}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - researchmind-data:/data
+    restart: unless-stopped
+
+volumes:
+  researchmind-data:

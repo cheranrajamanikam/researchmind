@@ -1,0 +1,41 @@
+{
+  "description": "Hand-labelled expected extraction values for the synthetic sample papers.",
+  "papers": {
+    "Adaptive Retrieval Depth": {
+      "Method": "Adaptive Retrieval",
+      "Dataset": "Natural Questions",
+      "Metric": "exact match",
+      "Metric value": "44.5",
+      "Conditions": "top-5 passages",
+      "Seeds": "3",
+      "Hardware": "4 NVIDIA A100 GPUs",
+      "Code link": "https://github.com/example/adaptive-rag",
+      "Hyperparameters": "learning rate 2e-5"
+    },
+    "Replicating Adaptive Retrieval": {
+      "Method": "Adaptive Retrieval",
+      "Dataset": "Natural Questions",
+      "Metric": "exact match",
+      "Metric value": "41.2",
+      "Conditions": "top-10 passages",
+      "Seeds": "5",
+      "Hardware": "8 NVIDIA V100 GPUs"
+    },
+    "Position Sensitivity": {
+      "Method": "Position-aware reranking",
+      "Dataset": "HotpotQA",
+      "Metric": "F1",
+      "Metric value": "63.8",
+      "Seeds": "3",
+      "Hardware": "single NVIDIA A100 GPU",
+      "Code link": "https://github.com/example/position-qa"
+    },
+    "Faithfulness Metrics": {
+      "Method": "Faithfulness-aware decoding",
+      "Dataset": "PopQA",
+      "Metric": "citation precision",
+      "Metric value": "71.4",
+      "Seeds": "1"
+    }
+  }
+}
